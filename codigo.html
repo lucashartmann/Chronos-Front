@@ -17,7 +17,7 @@
 
     <nav class="navbar">
 
-      <a href="calculadora.png"><img src="calculadora.png" style="margin-top:0px; height: 35px;"></a>
+      <a href="calculadora.png"><img alt="Uma calculadora" src="calculadora.png" style="margin-top:0px; height: 35px;"></a>
 
       <a href="index.html" title="Página Inicial">Calculadora</a>
 
@@ -103,11 +103,38 @@
 </p>
 <p>
   document.getElementById("AnosVividos").value = idadeEmAnos; <br>
-  document.getElementById("Mesesvividos").value = idadeEmMeses; <br>
-  document.getElementById("Diasvividos").value = idadeEmDias; <br>
-  document.getElementById("Horasvividas").value = idadeEmHoras; <br>
-  document.getElementById("Minutosvividos").value = idadeEmMinutos; <br>
-
+  document.getElementById("MesesVividos").value = idadeEmMeses; <br>
+  document.getElementById("DiasVividos").value = idadeEmDias; <br>
+  document.getElementById("HorasVividas").value = idadeEmHoras; <br>
+  document.getElementById("MinutosVividos").value = idadeEmMinutos; <br>
+</p>
+<p>
+  var aniverMes;<br>
+  if (mes <= month) {<br>
+  aniverMes = ((mes + 12) - month);<br>
+  } else {<br>
+  aniverMes = (mes - month);
+  }<br>
+</p>
+<p>
+  var aniverDias;<br>
+  if (dia <= date) {<br>
+  aniverDias = ((dia + 30) - date);<br>
+  } else {<br>
+  aniverDias = (dia - date);
+  }<br>
+</p>
+<p>
+  if (dia == dia && mes == month) {<br>
+  document.getElementById("aniversario").value = "Você está de aniversário hoje! Parabéns!";<br>
+  } else if (month > mes) {<br>
+  document.getElementById("aniversario").value = "Seu aniversário foi dia " + dia + "/" + mes + "\n";<br>
+  document.getElementById("aniversario").value = "Faltam " + aniverMes + " mês(es) e " + aniverDias + " dias para o seu aniversário. \n";<br>
+  } else {<br>
+  document.getElementById("aniversario").value = "Faltam " + aniverMes + " mês(es) e " + aniverDias + " dias para o seu aniversário. \n";
+  }<br>
+</p>
+<p>
   }
 
 </p>
