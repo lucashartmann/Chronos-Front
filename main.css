@@ -77,11 +77,13 @@ label {
 }
 
 input {
-  width:90px
+  width:90px;
 }
 
 .text-input{
-  width:323px
+  width:323px;
+  margin: auto;
+  display: flex;
 }
 
 img {
@@ -123,7 +125,7 @@ img {
 @media only screen and (max-device-width: 1024px) {
 
   .content:before {
-    height: 600px;
+    height: 1366px;
     width: 1024px;
   }
   .firstitems {
@@ -133,12 +135,26 @@ img {
     padding-left: 20px;
   }
   footer {
-    margin-top: 0px;
+    margin-top: 100px;
   }
   .text-input {
-    margin-top: 0px;
+    margin-top: 100px;
   }
 }
+
+@media only screen and (max-device-width: 941px) {
+  .content:before {
+    height: 1368px;
+    width: 941px;
+  }
+  footer {
+    margin-top: 70px;
+  }
+  .text-input {
+    margin-top: 50px;
+  }
+}
+
 
 @media only screen and (max-device-width: 912px) {
   .content:before {
@@ -150,6 +166,19 @@ img {
   }
   .text-input {
     margin-top: 100px;
+  }
+}
+
+@media only screen and (max-device-width: 904px) {
+  .content:before {
+    height: 1368px;
+    width: 904px;
+  }
+  footer {
+    margin-top: 80px;
+  }
+  .text-input {
+    margin-top: 60px;
   }
 }
 
@@ -182,6 +211,16 @@ img {
 }
 
 
+@media only screen and (max-device-width: 653px) {
+  .content:before {
+    height: 1180px;
+    width: 650px;
+  }
+  .seconditems {
+    margin-top: 30px;
+  }
+}
+
 @media only screen and (max-device-width: 414px) {
   .firstitems {
     font-size: 20px;
@@ -197,7 +236,7 @@ img {
     display: inline-grid;
   }
   .text-input {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 
@@ -206,6 +245,14 @@ img {
   .content:before {
     height: 915px;
     width: 412px;
+  }
+}
+
+@media only screen and (max-device-width: 403px) {
+
+  .content:before {
+    height: 915px;
+    width: 403px;
   }
 }
 
@@ -233,6 +280,26 @@ img {
   }
 }
 
+@media only screen and (max-device-width: 381px) {
+  .firstitems {
+    font-size: 17px;
+  }
+
+  .seconditems {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-device-width: 377px) {
+  .firstitems {
+    font-size: 16px;
+  }
+
+  .seconditems {
+    font-size: 16px;
+  }
+}
+
 
 @media only screen and (max-device-width: 375px) {
   .firstitems {
@@ -242,19 +309,22 @@ img {
     font-size: 15px;
   }
   .content:before {
-    height: 667px;
+    height: 812px;
     width: 375px;
   }
   #seta1 {
     margin-top: 50px;
     margin-left: 20px;
   }
+  .text-input {
+    margin-top: 50px;
+  }
 }
 
 
 @media only screen and (max-device-width: 360px) {
   .content:before {
-    height: 640px;
+    height: 740px;
     width: 360px;
   }
   #seta1 {
@@ -265,35 +335,96 @@ img {
     font-size: 14px;
   }
   .text-input {
-    margin-top: 20px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-device-width: 335px) {
+  .content:before {
+    height: 480px;
+    width: 335px;
+  }
+  .firstitems {
+    font-size: 14px;
+  }
+  .seconditems {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-device-width: 325px) {
+  .content:before {
+    height: 480px;
+    width: 325px;
+  }
+  .firstitems {
+    font-size: 13px;
+  }
+  .seconditems {
+    font-size: 13px;
   }
 }
 
 @media only screen and (max-device-width: 320px) {
   .content:before {
-    height: 480px;
+    height: 658px;
     width: 320px;
   }
   .firstitems {
+    display: inline-grid;
     font-size: 10px;
   }
   .seconditems {
-    font-size: 10px;
+    display: inline-grid;
+    font-size: 11px;
   }
 }
 
 @media only screen and (max-device-width: 280px) {
   .firstitems {
     margin-left: 30px;
+    font-size: 10px;
   }
-
   .seconditems{
-    margin-right: 50px;
-    padding-left: 40px;
+    font-size: 10px;
   }
   .content:before {
     height: 653px;
     width: 280px;
   }
 
+}
+
+@media only screen and (max-device-width: 268px) {
+
+  .content:before {
+    width: 268px;
+  }
+  .firstitems {
+    font-size: 13px;
+  }
+
+  .seconditems {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-device-width: 263px) {
+  .firstitems {
+    font-size: 13px;
+  }
+
+  .seconditems {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-device-width: 226px) {
+  .firstitems {
+    font-size: 21px;
+  }
+
+  .seconditems {
+    font-size: 21px;
+  }
 }
