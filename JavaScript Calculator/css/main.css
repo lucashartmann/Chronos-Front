@@ -1,0 +1,429 @@
+html, body{
+  overflow-x: hidden;
+}
+
+.content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(https://img.freepik.com/fotos-gratis/ardosia-verde_1205-377.jpg?1&w=996&t=st=1653082919~exp=1653083519~hmac=b1469766b88964bc366d29f493ec82260bd7ef4d9896ec7503c80a386c5b4960);
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+}
+
+.content {
+  text-align: center;
+}
+
+
+nav {
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  background-color: #126e51;
+
+  z-index: 99;
+}
+
+nav a {
+
+  color: whitesmoke;
+
+  margin: auto;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+nav li {
+
+  float: left;
+
+  list-style: none;
+
+  margin-left: 10px;
+
+  margin-top: 10px;
+
+}
+
+body {
+  color: whitesmoke;
+}
+
+#bl {
+  display: inline-grid;
+}
+
+.firstitems {
+  padding-right: 140px;
+}
+
+.seconditems {
+  padding-left: 120px;
+}
+
+label {
+  margin-top: 46px;
+}
+
+input {
+  width:90px;
+}
+
+.text-input{
+  width:323px;
+  margin: auto;
+  display: flex;
+}
+
+img {
+  height: 35px;
+}
+#seta2 {
+  margin-top: 44px;
+}
+#seta3 {
+  margin-top: 29px;
+}
+#seta4 {
+  margin-top: 32px;
+}
+#seta5 {
+  margin-top: 32px;
+}
+
+@media only screen and (max-device-width: 1280px) {
+
+  .content:before {
+    height: 800px;
+    width: 1280px;
+  }
+
+  #seta1 {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  footer {
+    margin-top: 90px;
+  }
+  .text-input {
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+
+  .content:before {
+    height: 1366px;
+    width: 1024px;
+  }
+  .firstitems {
+    padding-right: 30px;
+  }
+  .seconditems {
+    padding-left: 20px;
+  }
+  footer {
+    margin-top: 100px;
+  }
+  .text-input {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-device-width: 941px) {
+  .content:before {
+    height: 1368px;
+    width: 941px;
+  }
+  footer {
+    margin-top: 70px;
+  }
+  .text-input {
+    margin-top: 50px;
+  }
+}
+
+
+@media only screen and (max-device-width: 912px) {
+  .content:before {
+    height: 1368px;
+    width: 912px;
+  }
+  footer {
+    margin-top: 300px;
+  }
+  .text-input {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-device-width: 904px) {
+  .content:before {
+    height: 1368px;
+    width: 904px;
+  }
+  footer {
+    margin-top: 80px;
+  }
+  .text-input {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-device-width: 820px) {
+  .content:before {
+    height: 1180px;
+    width: 820px;
+  }
+  .firstitems {
+    margin-left: 40px;
+  }
+  #seta1 {
+    display: none;
+  }
+  #seta2 {
+    display: none !important;
+  }
+  #seta3 {
+    display: none !important;
+  }
+  #seta4 {
+    display: none !important;
+  }
+  #seta5 {
+    display: none !important;
+  }
+  footer {
+    margin-top: 90px;
+  }
+}
+
+
+@media only screen and (max-device-width: 653px) {
+  .content:before {
+    height: 1180px;
+    width: 650px;
+  }
+  .seconditems {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-device-width: 414px) {
+  .firstitems {
+    font-size: 20px;
+  }
+  .seconditems{
+    font-size: 20px;
+  }
+  .content:before {
+    height: 896px;
+    width: 414px;
+  }
+  #seta1 {
+    display: inline-grid;
+  }
+  .text-input {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-device-width: 412px) {
+
+  .content:before {
+    height: 915px;
+    width: 412px;
+  }
+}
+
+@media only screen and (max-device-width: 403px) {
+
+  .content:before {
+    height: 915px;
+    width: 403px;
+  }
+}
+
+@media only screen and (max-device-width: 393px) {
+  .firstitems {
+    font-size: 19px;
+  }
+  .seconditems{
+    font-size: 19px;
+  }
+  .content:before {
+    height: 851px;
+    width: 393px;
+  }
+}
+
+@media only screen and (max-device-width: 390px) {
+  .content:before {
+    height: 844px;
+    width: 390px;
+  }
+  #seta1 {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-device-width: 381px) {
+  .firstitems {
+    font-size: 17px;
+  }
+
+  .seconditems {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-device-width: 377px) {
+  .firstitems {
+    font-size: 16px;
+  }
+
+  .seconditems {
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-device-width: 375px) {
+  .firstitems {
+    font-size: 15px;
+  }
+  .seconditems{
+    font-size: 15px;
+  }
+  .content:before {
+    height: 812px;
+    width: 375px;
+  }
+  #seta1 {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .text-input {
+    margin-top: 50px;
+  }
+}
+
+
+@media only screen and (max-device-width: 360px) {
+  .content:before {
+    height: 740px;
+    width: 360px;
+  }
+  #seta1 {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  .seconditems {
+    font-size: 14px;
+  }
+  .text-input {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-device-width: 335px) {
+  .content:before {
+    height: 480px;
+    width: 335px;
+  }
+  .firstitems {
+    font-size: 14px;
+  }
+  .seconditems {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-device-width: 325px) {
+  .content:before {
+    height: 480px;
+    width: 325px;
+  }
+  .firstitems {
+    font-size: 13px;
+  }
+  .seconditems {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .content:before {
+    height: 658px;
+    width: 320px;
+  }
+  .firstitems {
+    display: inline-grid;
+    font-size: 10px;
+  }
+  .seconditems {
+    display: inline-grid;
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-device-width: 280px) {
+  .firstitems {
+    margin-left: 30px;
+    font-size: 10px;
+  }
+  .seconditems{
+    font-size: 10px;
+  }
+  .content:before {
+    height: 653px;
+    width: 280px;
+  }
+
+}
+
+@media only screen and (max-device-width: 268px) {
+
+  .content:before {
+    width: 268px;
+  }
+  .firstitems {
+    font-size: 13px;
+  }
+
+  .seconditems {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-device-width: 263px) {
+  .firstitems {
+    font-size: 13px;
+  }
+
+  .seconditems {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-device-width: 226px) {
+  .firstitems {
+    font-size: 21px;
+  }
+
+  .seconditems {
+    font-size: 21px;
+  }
+}
