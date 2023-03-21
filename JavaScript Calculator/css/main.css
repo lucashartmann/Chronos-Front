@@ -72,34 +72,10 @@ input {
   display: flex;
 }
 
-img {
-  height: 35px;
-}
-
-#seta2 {
-  margin-top: 44px;
-}
-
-#seta3 {
-  margin-top: 29px;
-}
-
-#seta4 {
-  margin-top: 32px;
-}
-
-#seta5 {
-  margin-top: 32px;
-}
-
 @media only screen and (max-device-width: 1280px) {
   .content:before {
     height: 800px;
     width: 1280px;
-  }
-  #seta1 {
-    margin-top: 50px;
-    margin-left: 10px;
   }
   footer {
     margin-top: 90px;
@@ -176,21 +152,6 @@ img {
   .firstitems {
     margin-left: 40px;
   }
-  #seta1 {
-    display: none;
-  }
-  #seta2 {
-    display: none !important;
-  }
-  #seta3 {
-    display: none !important;
-  }
-  #seta4 {
-    display: none !important;
-  }
-  #seta5 {
-    display: none !important;
-  }
   footer {
     margin-top: 90px;
   }
@@ -217,9 +178,6 @@ img {
   .content:before {
     height: 896px;
     width: 414px;
-  }
-  #seta1 {
-    display: inline-grid;
   }
   .text-input {
     margin-top: 50px;
@@ -258,10 +216,6 @@ img {
     height: 844px;
     width: 390px;
   }
-  #seta1 {
-    margin-top: 50px;
-    margin-left: 20px;
-  }
 }
 
 @media only screen and (max-device-width: 381px) {
@@ -282,7 +236,6 @@ img {
   }
 }
 
-
 @media only screen and (max-device-width: 375px) {
   .firstitems {
     font-size: 15px;
@@ -294,24 +247,15 @@ img {
     height: 812px;
     width: 375px;
   }
-  #seta1 {
-    margin-top: 50px;
-    margin-left: 20px;
-  }
   .text-input {
     margin-top: 50px;
   }
 }
 
-
 @media only screen and (max-device-width: 360px) {
   .content:before {
     height: 740px;
     width: 360px;
-  }
-  #seta1 {
-    margin-top: 50px;
-    margin-left: 10px;
   }
   .seconditems {
     font-size: 14px;
@@ -374,11 +318,9 @@ img {
     height: 653px;
     width: 280px;
   }
-
 }
 
 @media only screen and (max-device-width: 268px) {
-
   .content:before {
     width: 268px;
   }
