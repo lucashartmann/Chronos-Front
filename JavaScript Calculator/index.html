@@ -6,11 +6,11 @@
      <meta charset="utf-8">
      <meta name=viewport content="width=device-width,initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <title>CálculoTempoVida</title>
+     <title>Cálculo do Tempo de Vida</title>
      <meta name="author" content="@Lucas__Hartmann">
      <link rel="stylesheet" href="css/normalize.css">
      <link rel="stylesheet" href="css/main.css">
-      <link rel="icon" href="/JavaScript Calculator/imagens/calculadora.png">
+      <link rel="icon" href="imagens/calculadora.png">
     </head>
 
     <div class="content">
@@ -18,13 +18,11 @@
 
               <nav class="navbar">
 
-              <a href="calculadora.png"><img alt="Uma calculadora" src="/JavaScript Calculator/imagens/calculadora.png" style="height: 35px;"></a>
-
               <a href="index.html" title="Página Inicial">Calculadora</a>
 
-              <a href="codigo.html" title="Página Inicial">Cálculos</a>
+              <a href="codigo.html" title="Página Inicial">Código</a>
 
-              <a href="https://github.com/lucashartmann" title="Ir para perfil no Github"><img style="margin:1px; height: 20px;" src="/JavaScript Calculator/imagens/Eu1.png" alt="Gifthub" class="navi"></a>
+              <a href="https://github.com/lucashartmann" title="Ir para perfil no Github"><img style="margin:1px; height: 20px;" src="imagens/Eu1.png" alt="Gifthub" class="navi"></a>
 
               </nav></div>
 
@@ -53,13 +51,13 @@
         </div>
        
         <div class="seconditems" id="bl">
-          <label>Anos já vividos: <input type="text" name="AnosVividos" id="AnosVividos"></label>
-          <label>Meses já vividos: <input type="text" name="Mesesvividos" id="MesesVividos"> </label>
-          <label>Dias já vividos: <input type="text" name="Diasvividos" id="DiasVividos"> </label>
-          <label>Horas já vividos: <input type="text" name="Horasvividas" id="HorasVividas"> </label>
-          <label>Minutos já vividos: <input type="text" name="Minutosvividos" id="MinutosVividos"></label>
+          <label>Anos já vividos: <input type="text" name="AnosVividos" id="AnosVividos" disabled></label>
+          <label>Meses já vividos: <input type="text" name="Mesesvividos" id="MesesVividos" disabled> </label>
+          <label>Dias já vividos: <input type="text" name="Diasvividos" id="DiasVividos" disabled> </label>
+          <label>Horas já vividos: <input type="text" name="Horasvividas" id="HorasVividas" disabled> </label>
+          <label>Minutos já vividos: <input type="text" name="Minutosvividos" id="MinutosVividos" disabled></label>
         </div>
-      <label><input type="text" name="aniversario" id="aniversario" class="text-input" onkeyup="calculo()"></label>
+      <label><input type="text" name="aniversario" id="aniversario" class="text-input" onkeyup="calculo()" disabled></label>
         <footer>
            <p>Este site considera em todos os seus cálculos, os anos bissextos.</p>
         </footer>
