@@ -26,6 +26,7 @@ nav {
   padding: 0;
   display: flex;
   background-color: black;
+  text-align: center;
 }
 
 nav a {
@@ -35,6 +36,8 @@ nav a {
   margin-bottom: 12px;
   text-decoration: none;
   font-weight: bold;
+  display: inline-block;
+  text-align: center;
 }
 
 nav li {
