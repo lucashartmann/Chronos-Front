@@ -3,61 +3,47 @@ html, body{
 }
 
 .content:before {
-  content: "";
   position: fixed;
-  left: 0;
-  right: 0;
-  z-index: -1;
   display: block;
-  background-image: url(https://img.freepik.com/fotos-gratis/ardosia-verde_1205-377.jpg?1&w=996&t=st=1653082919~exp=1653083519~hmac=b1469766b88964bc366d29f493ec82260bd7ef4d9896ec7503c80a386c5b4960);
   width: 100%;
   height: 100%;
-  filter: blur(5px);
 }
 
 .content {
   text-align: center;
 }
 
+.navegationbar {  
+  margin: 0;
+  padding: 0;
+}
+
 
 nav {
-
   width: 100%;
-
   height: 100%;
-
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-
-  background-color: #126e51;
-
-  z-index: 99;
+  background-color: black;
 }
 
 nav a {
-
-  color: whitesmoke;
-
+  color: white;
   margin: auto;
-
+  margin-top: 12px;
+  margin-bottom: 12px;
   text-decoration: none;
-
   font-weight: bold;
 }
 
 nav li {
-
-  float: left;
-
   list-style: none;
-
-  margin-left: 10px;
-
-  margin-top: 10px;
-
 }
 
 body {
-  color: whitesmoke;
+  color: black;
 }
 
 #bl {
@@ -89,26 +75,28 @@ input {
 img {
   height: 35px;
 }
+
 #seta2 {
   margin-top: 44px;
 }
+
 #seta3 {
   margin-top: 29px;
 }
+
 #seta4 {
   margin-top: 32px;
 }
+
 #seta5 {
   margin-top: 32px;
 }
 
 @media only screen and (max-device-width: 1280px) {
-
   .content:before {
     height: 800px;
     width: 1280px;
   }
-
   #seta1 {
     margin-top: 50px;
     margin-left: 10px;
@@ -122,7 +110,6 @@ img {
 }
 
 @media only screen and (max-device-width: 1024px) {
-
   .content:before {
     height: 1366px;
     width: 1024px;
@@ -240,7 +227,6 @@ img {
 }
 
 @media only screen and (max-device-width: 412px) {
-
   .content:before {
     height: 915px;
     width: 412px;
@@ -248,7 +234,6 @@ img {
 }
 
 @media only screen and (max-device-width: 403px) {
-
   .content:before {
     height: 915px;
     width: 403px;
@@ -283,7 +268,6 @@ img {
   .firstitems {
     font-size: 17px;
   }
-
   .seconditems {
     font-size: 17px;
   }
@@ -293,7 +277,6 @@ img {
   .firstitems {
     font-size: 16px;
   }
-
   .seconditems {
     font-size: 16px;
   }
@@ -402,7 +385,6 @@ img {
   .firstitems {
     font-size: 13px;
   }
-
   .seconditems {
     font-size: 13px;
   }
@@ -412,7 +394,6 @@ img {
   .firstitems {
     font-size: 13px;
   }
-
   .seconditems {
     font-size: 13px;
   }
@@ -422,7 +403,6 @@ img {
   .firstitems {
     font-size: 21px;
   }
-
   .seconditems {
     font-size: 21px;
   }
