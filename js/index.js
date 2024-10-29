@@ -1,25 +1,21 @@
 function calculo() {
-
   var minuto = document.getElementById('minuto').value
   var hora = document.getElementById('hora').value
   var dia = document.getElementById('dia').value
   var mes = document.getElementById('mes').value
   var ano = document.getElementById('ano').value
-
   var d = new Date();
   var date = d.getDate();
   var month = d.getMonth() + 1;
   var year = d.getFullYear();
   var hour = d.getHours();
   var minute = d.getMinutes();
-
-
   var a = ano - 1900;
   var bissexto = a % 4;
   var bissextoo = a % 100;
   var bissextooo = a % 400;
-
   var idadeEmAnos = d.getFullYear() - ano;
+
   if (month < mes) {
     idadeEmAnos = year - ano - 1;
   } else if (month == mes && date < dia) {
@@ -54,9 +50,7 @@ function calculo() {
   }
 
   var idadeEmHoras = ((idadeEmDias - 1) * 24) + hour + (24 - hora);
-
   var idadeEmMinutos = (idadeEmHoras * 60) + minute + minuto;
-
 
   document.getElementById("AnosVividos").value = idadeEmAnos;
   document.getElementById("MesesVividos").value = idadeEmMeses;
@@ -87,9 +81,4 @@ function calculo() {
     document.getElementById("aniversario").value = "Faltam " + aniverMes + " mês(es) e " + aniverDias + " dias para o seu aniversário. \n";
   }
 
-
-
-
 }
-
-
