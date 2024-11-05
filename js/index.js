@@ -1,9 +1,9 @@
 function calculo() {
-  var minuto = document.getElementById('minuto').value
-  var hora = document.getElementById('hora').value
-  var dia = document.getElementById('dia').value
-  var mes = document.getElementById('mes').value
-  var ano = document.getElementById('ano').value
+  var minuto = parseInt(document.getElementById('minuto').value)
+  var hora = parseInt(document.getElementById('hora').value)
+  var dia = parseInt(document.getElementById('dia').value)
+  var mes = parseInt(document.getElementById('mes').value)
+  var ano = parseInt(document.getElementById('ano').value)
   var d = new Date();
   var date = d.getDate();
   var month = d.getMonth() + 1;
@@ -59,20 +59,20 @@ function calculo() {
   document.getElementById("MinutosVividos").value = idadeEmMinutos;
 
   var aniverMes;
-  if (mes <= month) {
+  if (mes < month) {
     aniverMes = ((mes + 12) - month);
   } else {
     aniverMes = (mes - month);
   }
 
   var aniverDias;
-  if (dia <= date) {
+  if (dia < date) {
     aniverDias = ((dia + 30) - date);
   } else {
     aniverDias = (dia - date);
   }
 
-  if (dia == dia && mes == month) {
+  if (dia == date && mes == month) {
     document.getElementById("aniversario").value = "Você está de aniversário hoje! Parabéns!";
   } else if (month > mes) {
     document.getElementById("aniversario").value = "Seu aniversário foi dia " + dia + "/" + mes + "\n";
