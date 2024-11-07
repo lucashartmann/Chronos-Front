@@ -25,122 +25,86 @@
     crossorigin="anonymous"></script>
 <div class="code">
   <p>
-    function calculo() {
-  </p>
-
-  <p>
-    var minuto = document.getElementById('minuto').value <br>
-    var hora = document.getElementById('hora').value <br>
-    var dia = document.getElementById('dia').value <br>
-    var mes = document.getElementById('mes').value <br>
-    var ano = document.getElementById('ano').value
-    <br>
-  </p>
-
-  <p>
-    var d = new Date(); <br>
-    var date = d.getDate(); <br>
-    var month = d.getMonth() + 1; <br>
-    var year = d.getFullYear(); <br>
-    var hour = d.getHours(); <br>
-    var minute = d.getMinutes();
-  </p>
-
-  <p>
-    var a = ano - 1900; <br>
-    var bissexto = a % 4; <br>
-    var bissextoo = a % 100; <br>
-    var bissextooo = a % 400;
-    <br>
-  </p>
-
-  <p>
-    var idadeEmAnos = d.getFullYear() - ano; <br>
-    if (month < mes) { <br>
-      idadeEmAnos = year - ano - 1; <br>
-      } else if (month == mes && date < dia) { <br>
-        idadeEmAnos = year - ano - 1; <br>
-        } else if (month == mes && date == dia && hour < hora) { <br>
-          idadeEmAnos = year - ano - 1; <br>
-          } else if (month == mes && date == dia && hour == hora && minute < minuto) { <br>
-            idadeEmAnos = year - ano - 1;
-            }<Br>
-  </p>
-
-  <p>
-    var idadeEmMeses = idadeEmAnos * 12 + (12 - mes) + month; <br>
-    if (date < dia) { <br>
-      idadeEmMeses = idadeEmAnos * 12 + (12 - mes) + month - 1; <br>
-      } else if (date == dia && hour < hora) { <br>
-        idadeEmMeses = idadeEmAnos * 12 + (12 - mes) + month - 1; <br>
-        } else if (date == dia && hour == hora && minute < minuto) { <br>
-          idadeEmMeses = idadeEmAnos * 12 + (12 - mes) + month - 1;
-          } <br>
-  </p>
-
-  <p>
-    var idadeEmDias = (idadeEmAnos * 365) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date - 1);
-    if (hour > hora) { <br>
-    idadeEmDias = (idadeEmAnos * 365) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date);
-    } else if (hour == hora && minute > minuto) { <br>
-    idadeEmDias = (idadeEmAnos * 365) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date);
-    } <br>
-    if (bissexto == 0 && bissextooo == 0 && bissextoo > 0) { <br>
-    idadeEmDias = (idadeEmAnos * 366) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date - 1);
-    } else if (hour > hora) { <br>
-    idadeEmDias = (idadeEmAnos * 366) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date);
-    } else if (hour == hora && minute > minuto) { <br>
-    idadeEmDias = (idadeEmAnos * 366) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date);
-    } <br>
-  </p>
-
-  <p>
-    var idadeEmHoras = ((idadeEmDias - 1) * 24) + hour + (24 - hora); <br>
-
-    var idadeEmMinutos = (idadeEmHoras * 60) + minute + minuto; <br>
-  </p>
-
-  <p>
-    document.getElementById("AnosVividos").value = idadeEmAnos; <br>
-    document.getElementById("MesesVividos").value = idadeEmMeses; <br>
-    document.getElementById("DiasVividos").value = idadeEmDias; <br>
-    document.getElementById("HorasVividas").value = idadeEmHoras; <br>
-    document.getElementById("MinutosVividos").value = idadeEmMinutos; <br>
-  </p>
-
-  <p>
-    var aniverMes;<br>
-    if (mes <= month) {<br>
-      aniverMes = ((mes + 12) - month);<br>
-      } else {<br>
-      aniverMes = (mes - month);
-      }<br>
-  </p>
-
-  <p>
-    var aniverDias;<br>
-    if (dia <= date) {<br>
-      aniverDias = ((dia + 30) - date);<br>
-      } else {<br>
-      aniverDias = (dia - date);
-      }<br>
-  </p>
-
-  <p>
-    if (dia == dia && mes == month) {<br>
-    document.getElementById("aniversario").value = "Você está de aniversário hoje! Parabéns!";<br>
-    } else if (month > mes) {<br>
-    document.getElementById("aniversario").value = "Seu aniversário foi dia " + dia + "/" + mes + "\n";<br>
-    document.getElementById("aniversario").value = "Faltam " + aniverMes + " mês(es) e " + aniverDias + " dias para o
-    seu aniversário. \n";<br>
-    } else {<br>
-    document.getElementById("aniversario").value = "Faltam " + aniverMes + " mês(es) e " + aniverDias + " dias para o
-    seu aniversário. \n";
-    }<br>
-  </p>
-
-  <p>
-    }
+    function calculo() {</br>
+      var minuto = parseInt(document.getElementById('minuto').value) </br>
+      var hora = parseInt(document.getElementById('hora').value) </br>
+      var dia = parseInt(document.getElementById('dia').value) </br>
+      var mes = parseInt(document.getElementById('mes').value) </br>
+      var ano = parseInt(document.getElementById('ano').value) </br>
+      var d = new Date(); </br>
+      var date = d.getDate(); </br>
+      var month = d.getMonth() + 1; </br>
+      var year = d.getFullYear(); </br>
+      var hour = d.getHours(); </br>
+      var minute = d.getMinutes(); </br>
+      var a = ano - 1900; </br>
+      var bissexto = a % 4; </br>
+      var bissextoo = a % 100; </br>
+      var bissextooo = a % 400; </br>
+      var idadeEmAnos = d.getFullYear() - ano; </br>
+      if (month < mes) { </br>
+        idadeEmAnos = year - ano - 1; </br>
+      } else if (month == mes && date < dia) { </br>
+        idadeEmAnos = year - ano - 1; </br>
+      } else if (month == mes && date == dia && hour < hora) { </br>
+        idadeEmAnos = year - ano - 1; </br>
+      } else if (month == mes && date == dia && hour == hora && minute < minuto) {</br>
+        idadeEmAnos = year - ano - 1; </br>
+      }</br>
+      var idadeEmMeses = idadeEmAnos * 12 + (12 - mes) + month; </br>
+      if (date < dia) { </br>
+        idadeEmMeses = idadeEmAnos * 12 + (12 - mes) + month - 1; </br>
+      } else if (date == dia && hour < hora) { </br>
+        idadeEmMeses = idadeEmAnos * 12 + (12 - mes) + month - 1; </br>
+      } else if (date == dia && hour == hora && minute < minuto) { </br>
+        idadeEmMeses = idadeEmAnos * 12 + (12 - mes) + month - 1; </br>
+      } </br>
+      var idadeEmDias = (idadeEmAnos * 365) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date - 1); </br>
+      if (hour > hora) { </br>
+        idadeEmDias = (idadeEmAnos * 365) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date); </br>
+      } else if (hour == hora && minute > minuto) { </br>
+        idadeEmDias = (idadeEmAnos * 365) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date); </br>
+      } </br>
+      if (bissexto == 0 && bissextooo == 0 && bissextoo > 0) { </br>
+        idadeEmDias = (idadeEmAnos * 366) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date - 1); </br>
+      } else if (hour > hora) { </br>
+        idadeEmDias = (idadeEmAnos * 366) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date); </br>
+      } else if (hour == hora && minute > minuto) { </br>
+        idadeEmDias = (idadeEmAnos * 366) + ((12 - mes) * 31) + (31 - dia) + (((month - 1) * 31) + date); </br>
+      } </br>
+      var idadeEmHoras = ((idadeEmDias - 1) * 24) + hour + (24 - hora); </br>
+      var idadeEmMinutos = (idadeEmHoras * 60) + minute + minuto;  </br>
+      document.getElementById("AnosVividos").value = idadeEmAnos; </br>
+      document.getElementById("MesesVividos").value = idadeEmMeses; </br>
+      document.getElementById("DiasVividos").value = idadeEmDias; </br>
+      document.getElementById("HorasVividas").value = idadeEmHoras; </br>
+      document.getElementById("MinutosVividos").value = idadeEmMinutos; </br>
+      var aniverMes; </br>
+      if (mes < month) { </br>
+        aniverMes = ((mes + 12) - month); </br>
+      } else { </br>
+        aniverMes = (mes - month); </br>
+      } </br>
+      var aniverDias; </br>
+      if (dia < date) { </br>
+        aniverDias = ((dia + 30) - date); </br>
+      } else { </br>
+        aniverDias = (dia - date); </br>
+      } </br>
+      var aniversaryMonths; </br>
+      var aniversaryDays; </br>
+      aniversaryMonths = ((12 - mes) + month);  </br>
+      aniversaryDays = ((30 - dia) * aniversaryMonths); </br>
+      var dado = document.getElementById("aniversario"); </br>
+      if (dia == date && mes == month) { </br>
+        dado.value = "Você está de aniversário hoje! Parabéns!"; </br>
+      } else if (month > mes) { </br>
+        dado.value = "\nSeu aniversário foi há " + aniversaryDays + " dias e " + aniversaryMonths + " meses"; </br>
+        dado.value += "\nFaltam " + aniverMes + " mês(es) e " + aniverDias + " dias para o seu aniversário. \n"; </br>
+      } else { </br>
+        dado.value = "\nFaltam " + aniverMes + " mês(es) e " + aniverDias + " dias para o seu aniversário. \n"; </br>
+      } </br>
+    }</br>
   </p>
 </div>
 </body>

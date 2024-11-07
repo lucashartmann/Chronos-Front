@@ -72,13 +72,21 @@ function calculo() {
     aniverDias = (dia - date);
   }
 
+  var aniversaryMonths;
+  var aniversaryDays;
+  aniversaryMonths = ((12 - mes) + month); 
+  aniversaryDays = ((30 - dia) * aniversaryMonths);
+
+
+  var dado = document.getElementById("aniversario");
+
   if (dia == date && mes == month) {
-    document.getElementById("aniversario").value = "Você está de aniversário hoje! Parabéns!";
+    dado.value = "Você está de aniversário hoje! Parabéns!";
   } else if (month > mes) {
-    document.getElementById("aniversario").value = "Seu aniversário foi dia " + dia + "/" + mes + "\n";
-    document.getElementById("aniversario").value = "Faltam " + aniverMes + " mês(es) e " + aniverDias + " dias para o seu aniversário. \n";
+    dado.value = "\nSeu aniversário foi há " + aniversaryDays + " dias e " + aniversaryMonths + " meses";
+    dado.value += "\nFaltam " + aniverMes + " mês(es) e " + aniverDias + " dias para o seu aniversário. \n";
   } else {
-    document.getElementById("aniversario").value = "Faltam " + aniverMes + " mês(es) e " + aniverDias + " dias para o seu aniversário. \n";
+    dado.value = "\nFaltam " + aniverMes + " mês(es) e " + aniverDias + " dias para o seu aniversário. \n";
   }
 
 }
