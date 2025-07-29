@@ -7,31 +7,14 @@ html, body{
   height: 100%;
 }
 
-nav {
-  display: flex;
-  background-color: black;
-}
-
-nav a {
-  color: white;
-  margin: 13.45%;
-  margin-top: 17px;
-  margin-bottom: 2px;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.githubIcon{
-  height: 36px;
-}
-
 .content {
+  margin-top: 7%;
   text-align: center;
 }
 
 body {
   color: black;
+  background-color: rgb(155, 77, 77);
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 23px;
